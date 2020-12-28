@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="style.css" type="text/css" rel="stylesheet"> 
+    </head>
+    <body>
+        <nav class="container">
+            <header class="header">
+                <div class="mainheader">
+                    <div class="jazz">
+                        <img src="assets\img\jazz.png" />
+    
+                    </div> 
+    
+                    <div class="rightheader">
+                        <div class="notif" >
+                            <div class="notification" >
+                                <img src="assets\img\notification.png" id="not1" onclick="dropdown()"/>
+                                 <div class="icon"> 
+    
+                                 </div> 
+                                 <audio>
+                                    <source src="assets\audio\bell.mp3"/>
+                                 </audio>
+                            </div>
+                            
+                        <div id="drop">
+                            <div value="volvo" id="down">Volvo</div>
+                            <div value="audi" id="down">Audi</div>
+                            <div value="benz" id="down">Benz</div>
+                            <div value="maruti" id="down">Maruti</div>
+
+                            </div> 
+    
+                        </div>
+                        <div class="manface" >
+                             <img id="manface" src="assets\img\man.jpg"   onclick="sidebar()"/>
+    
+                        </div>
+                        <div id="sidebar">
+                            <div id="side"> Sidebar</div>
+                            <img src="assets\img\close.png" id="sidebarclose">
+
+                        </div>
+                    </div>
+    
+    
+    
+                </div>
+                <div class="subheader1">
+                    <div class="leftarrow">
+                        
+                       ← 
+    
+                    </div>
+                    
+                    
+                    <div class="home">
+                        Home
+                    </div>
+                    <div class="slash">
+                        /
+                        
+                    </div>
+                    <div class="services" >
+                        Services
+                        
+                    </div>
+                    <div class="slash">
+                        /  
+                    </div>
+                    <div class="serviceoneAPI">
+                        Service  One (API-Python)
+    
+                    </div>
+                    <!-- <div class="content1"> 
+                        <div class="left">
+    
+                        </div>
+                        <div class="mid">
+    
+                        </div>
+                        <div class="right">
+    
+                        <!-- </div> -->
+    
+                    
+                </div>
+            </header>
+
+            <div class="backgroundpage">
+               <div class="subheader2">
+                    
+                      <div class="pattern">
+                          <img src="assets\img\pattern.png" id="pattern" />
+
+                      </div>
+               </div>
+               <div class="subheader3">
+                    <div class="lefter">
+                        <div class="leftsubheader2">
+                               <div class="serviceone">
+                                    Service One
+                               </div>
+                               <div id=flash onclick="modal()">
+                                     <img id="image3" src="assets\img\share.png" />
+                               </div>
+                               <div id="modal">
+                                      <div  id="modal1">
+                                             <div id="sharehere">
+                                                Share here
+                                             </div>
+                                             <img src="assets\img\close.png" id="modalclose">
+                                      </div>
+                                      
+                               </div>
+                               
+
+                        </div>
+                        <div class="left">
+                            <div id="inactive" class="overview" onclick="overview()">
+                                OVERVIEW
+     
+                            </div>
+                            <div id="inactive" class="access" onclick="access()">
+                                ACCESS CONTROL
+     
+                            </div>
+                            <div class="cost" id="inactive" onclick="cost()">
+                                COST
+     
+                            </div>
+                            
+                         </div>
+
+                    </div>
+                    <div class="mid">
+                       <div class="rectangles">
+                           <div id="rectangle1" class="greenrectangle" onclick="rect(this.id)">
+
+                           </div>
+                           <div id="rectangle2" class="greenrectangle" onclick="rect(this.id)">
+
+                           </div>
+                           <div id="rectangle3" class="rectangle11" onclick="rect(this.id)">
+
+                           </div>
+                           <div id="rectangle4" class="rectangle21" onclick="rect(this.id)">
+
+                           </div>
+
+                       </div>
+                       <div class="nextconfigure">
+                           <div class="next">
+                               Next Action:
+
+                           </div>
+                           <div class="configure">
+                               Configure Enviornments
+
+                           </div>
+
+                       </div>
+                   </div>   
+                    <div class="right">
+                        <div id="0" class="logopart" onclick="change(this.id)">
+                            <div class="logo">
+                                <img id="logo"  src="assets\img\recur.png">
+
+                            </div>
+                            <div class="font">
+                                Endpoint
+                            </div>
+
+                        </div>
+                        <div id="1" class="logopart" onclick="change(this.id)">
+                            <div class="logo2">
+                                <img id="logo1"  src="assets\img\star.png">
+
+
+                            </div>
+                            <div class="font">
+                                Test
+                            </div>
+
+                        </div>
+                        <div id="2" class="logopart" onclick="change(this.id)">
+                            <div class="logo3">
+
+                                <img id="logo"  src="assets\img\copy.png">
+                            </div>
+                            <div class="font">
+                                 Metrics
+                            </div>
+
+                        </div>
+                        <div id="3" class="logopart" onclick="change(this.id)">
+                            <div class="logo4">
+                                <img id="logo"  src="assets\img\date.png">
+
+                            </div>
+                            <div class="font">
+                               Logs
+                            </div>
+
+                        </div>
+                        <div id="4" class="logopart" onclick="change(this.id)">
+                            <div class="logo5">
+                                <img id="logo"  src="assets\img\share.png">
+
+                            </div>
+                            <div class="font">
+                               Code
+                            </div>
+
+                        </div>
+                        <div id="5" class="logopart" onclick="change(this.id)">
+                            <div class="logo6">
+                                <img id="logo"  src="assets\img\delete.png">
+
+
+                            </div>
+                            <div class="font">
+                                Delete
+                            </div>
+
+                        </div>
+
+                    </div>   
+
+                
+
+
+                </div>
+
+            
+            
+               <div class="content1" >  
+                   <div class="left">
+                       <div class="head">
+                           <div class="clock">
+                               <img src="assets\img\clock.png">
+                           </div>
+
+                           <div class="general">
+                               General
+
+                           </div>
+
+                           <div id="pencil">
+                               <img src="assets\img\pencil.png">
+                           </div>
+
+                        </div>
+                        <div class="body">
+                            <div class="line">
+                                <div class="namespace">
+                                    Namespace
+                                </div>
+                                <div class="jazz">
+                                    jazztest
+                                </div>
+
+                            </div>
+                            <div class="line">
+                                <div class="application">
+                                    Application
+                                </div>
+                                <div class="lorem">
+                                    Lorem Ipsum
+                                </div>
+                           </div>    
+                           <div class="line">
+                                <div class="runtime">
+                                    Runtime
+                                </div>
+                                <div class="python1">
+                                    Python 2.7
+                                </div>
+    
+                            </div>
+                            <div class="line">
+                                <div class="deploy">
+                                    Deployments
+                                </div>
+                                <div class="python2">
+                                    Python
+                                </div>
+
+                            </div>
+                            <div class="line">
+                                <div class="description">
+                                    Description
+                                </div>
+                                <div class="lorem2">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.
+                                </div>
+
+                            </div>
+                            <div class="line">
+                                <div class="created">
+                                    Created By
+                                </div>
+                                <div class="abhishek">
+                                    Abhishek Anand
+                                </div>
+
+                            </div>
+                            <div class="line">
+                                <div class="service">
+                                    Service Type
+                                </div>
+                                <div class="website">
+                                    Website
+                                </div>
+
+                            </div>
+                            <div class="line">
+                                <div class="status">
+                                    Status
+                                </div>
+                                <div class="active">
+                                    Active
+                                </div>
+
+                            </div>
+                            
+
+                         </div>
+
+                    </div>
+                    <div class="mid">
+
+                        <div class="head">
+                            <div class="approvals">
+                                   <img src="assets\img\approvals.png" />
+                            </div>
+                            <div class="approval">
+                               Approvals
+                            </div>
+                            <div>
+                               <img src="assets\img\pencil.png" />
+                            </div>
+
+                        </div>
+                        <div class="body">
+                            <div class="line2">
+                                <div class="status">
+                                    Status
+                                </div>
+                                <div class="active">
+                                    Active
+                                </div>
+
+                            </div>
+                            <div class="line2">
+                                <div class="domain">
+                                    Domain
+                                </div>
+                                <div class="tmo">
+                                    tmo.com
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="head1">
+                            <div class="platforms">
+                                   <img src="assets\img\platform.png" />
+                            </div>
+                            <div class="platform">
+                               Platform
+                            </div>
+                            <div>
+                               <img src="assets\img\pencil.png" />
+                            </div>
+                        </div>
+                        <div class="body">
+                            <div class="line2">
+                                <div class="provider">
+                                    Provider
+                                </div>
+                                <div class="awspack"> 
+                                    <div class="aws">
+                                        AWS
+
+                                    </div>
+                                    <div class="pack"> 
+                                       <img src="assets\img\pack.png" />
+                                     </div> 
+                                </div>     
+
+                            </div> 
+                           <div class="line2">
+                                    <div class="suscription">
+                                        Suscription ID
+                                    </div>
+                                    <div class="zero">
+                                        00975-0C1
+                                    </div>
+    
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="part1">
+                            <div class="head">
+                                <div class="approvals">
+                                    <img src="assets\img\approvals.png" />   
+                                </div>
+                                <div class="snapshot">
+                                    Snapshot
+                                </div>
+
+
+                            </div>
+                            <div class="body">
+                                <div class="fivepart">
+                                    <div class="five">
+                                        5
+                                    </div>
+                                    <div class="totaldeploy">
+                                        Total number of <br>Deployment <br>(Last 24 hours)
+
+                                    </div>
+
+                                </div>
+                                <div class="twelvepart">
+                                    <div class="twelve">
+                                        12
+                                    </div>
+                                    <div class="totalenv">
+                                        Total number of<br> environments<br>
+                                        (Last 24 hours)
+                                    </div>
+
+                                </div>
+                                <div class="12part">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="part2">
+                            <div class="head">
+                                <div class="platform">
+                                    <img src="assets\img\platform.png" />   
+                                </div>
+                                <div class="references">
+                                    References
+                                </div>
+
+                            </div>
+                            <div class="body">
+                                <div class="how">
+                                    How to build a website on Jazz
+                                </div>
+                                <div class="about">
+                                    About Jazz Environments
+                                </div>
+                                <div class="jazz">
+                                    Jazz CI/CD
+                                </div>    
+                            
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>  
+                <div class="content2">
+                    <div class="left">
+                        <div class="environments">
+                            ENVIRONMENTS
+                        </div>
+                        <div  class="settings">
+                             <img id="spanner1" src="assets\img\spanner.png" >
+                        </div>
+                        <div class="edit">
+                             Edit Environment Settings 
+                        </div>
+
+                    </div>
+                    <div class="right">
+                        <div class="createbox">
+                            <div class="plus">
+                               <img src="assets\img\add1.png" >
+                            </div>
+                            <div class="create">
+                                CREATE ENVIRONMENT
+                            </div>
+
+                        </div>
+                        <div class="search">
+                             <img src="assets\img\search.png">
+                        </div>
+                        <div class="icon1">
+                              <img src="assets\img\note.png">
+                        </div>
+                        <div class="icon2">
+                              <img src="assets\img\discussions.png">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="content3">
+                    <div class="left">
+                          <div class="alert">
+                              <img src="assets\img\alert.png">
+                          </div>
+                          <div class="new">
+                            4 new environments have been added. Let’s configure them!
+                          </div>    
+
+                        
+                    </div>
+                    <div class="right">
+                         <div class="Configure">
+                             CONFIGURE
+                         </div>
+                         <div class="copy">
+                            <img src="assets\img\copy2.png" />
+                         </div>
+
+                      
+                     
+                    </div>
+                </div>
+                <div class="tabl">
+                    <table class="table">
+
+                        <tr class="row1" onmouseover="colorchange1(this.classList[0])" onmouseout="colorchange2(this.classList[0])">
+                            <td class="column1">
+                                <div class="font">
+                                    BRANCH
+                                </div>
+                                <div class="search">
+                                     <img id="search1" src="assets\img\question.png" /> 
+    
+                                </div>
+                                <div class="branch12">
+                                        Branch names have been created and are editable in a 3rd party repo.
+                                     </div>
+                            </td>
+                            <td class="column2">
+                                
+                            </td>
+                            <td class="column3">
+                                <div class="font">
+                                    ACCOUNT :
+                                </div>
+                                <div class="ellipsis1">
+                                    <!-- <img id="elip1" src="assets\img\updown.png" />  -->
+                                </div>
+                            </td>
+                            <td class="column4">
+                                <div class="font">
+                                    REGION :
+                                </div>
+                                <div class="ellipsis2">
+                                    <!-- <img id="elip1" src="assets\img\updown.png" />  -->
+                                </div>
+                            </td>
+                            <td class="column5">
+                                <div class="font">
+                                    LAST DEPLOYMENT :
+                                </div>
+                                <div class="ellipsis3">
+                                     <!-- <img id="elip1" src="assets\img\updown.png" />  -->
+                                </div>
+                            </td>
+                            <td class="column6">
+                                <div class="font">
+                                    DEPLOYMENT STATUS :
+                                </div>
+                                <div class="ellipsis4">
+                                    <!-- <img id="elip1" src="assets\img\updown.png" />  -->
+                                </div>
+                            </td>
+    
+                        </tr> 
+    
+                        <tr class="row2" onmouseover="colorchange1(this.classList[0])" onmouseout="colorchange2(this.classList[0])">
+                             <td class="column1">
+                                master
+                             </td>
+                             <td class="column2">
+                                  PROD 
+                             </td>
+                             <td class="column3">
+                                501-5192
+                             </td>
+                             <td class="column4">
+                                us-west2
+                             </td>
+                             <td class="column5">
+                                Feb 19, 2020 3:30 PM
+                             </td>
+                             <td class="column6">
+                                  <div class="success">
+                                      Successfull
+                                
+                                   </div> 
+                                     <div class="icons"> 
+                                    <div class="like">
+                                        <img id="like1" src="assets\img\like.png"  />
+                                     </div>
+                                     <div class="note">
+                                         <img id="note1"  src="assets\img\note.png" />
+                                     </div>
+                                     <div class="discussions">
+                                         <img id="set1" src="assets\img\settings.svg" onclick="mod(this.id)"/>
+                                     </div>
+                                    </div> 
+                             </td>
+                        </tr>
+    
+                        <tr class="row3" onmouseover="colorchange1(this.classList[0])" onmouseout="colorchange2(this.classList[0])"> 
+                            <td class="column1">
+                                master
+                             </td>
+                             <td class="column2">
+                                  STAGING
+                             </td>
+                             <td class="column3">
+                                501-5192
+                             </td>
+                             <td class="column4">
+                                us-west2
+                             </td>
+                             <td class="column5">
+                                Feb 19, 2020 3:30 PM
+                             </td>
+                             <td class="column6">
+                                Successfull
+                                <img id="set2" src="assets\img\settings.svg" onclick="mod(this.id)"/>
+                            </td>
+                             
+    
+                        </tr>
+    
+                        <tr class="row4" onmouseover="colorchange1(this.classList[0])" onmouseout="colorchange2(this.classList[0])"> 
+                            <td class="column1">
+                                feature
+                             </td>
+                             <td class="column2">
+                                DEV-QA2
+                             </td>
+                             <td class="column3">
+                                501-5192
+                             </td>
+                             <td class="column4">
+                                us-west2
+                             </td>
+                             <td class="column5">
+                                Feb 19, 2020 3:30 PM
+                             </td>
+                             <td class="column6">
+                                Successfull
+                                <img id="set3" src="assets\img\settings.svg" onclick="mod(this.id)"/>
+                            </td>
+                             
+    
+                        </tr>
+    
+                        <tr class="row5" onmouseover="colorchange1(this.classList[0])" onmouseout="colorchange2(this.classList[0])">
+                            <td class="column1">
+                                test
+                             </td>
+                             <td class="column2">
+                                N1XRTBGH567890
+                             </td>
+                             <td class="column3">
+                                501-8263
+                             </td>
+                             <td class="column4">
+                                us-west2
+                             </td>
+                             <td class="column5">
+                                Feb 19, 2020 3:30 PM
+                             </td>
+                             <td class="column6">
+                                Pending Approval
+                                <img id="set4" src="assets\img\settings.svg" onclick="mod(this.id)"/>
+                            </td>
+                             
+    
+                        </tr>
+                        <tr class="row6" onmouseover="colorchange1(this.classList[0])" onmouseout="colorchange2(this.classList[0])">
+                            <td class="column1">
+                                <div class="alert1">
+                                   <img  src="assets\img\alert1.png" />
+                                </div>
+                                <div class="one">
+                                     1234
+                                </div>
+                             </td>
+                             <td class="column2">
+                                --
+                             </td>
+                             <td class="column3">
+                                --
+                             </td>
+                             <td class="column4">
+                                --
+                             </td>
+                             <td class="column5">
+                                --
+                             </td>
+                             <td class="column6">
+                                 <div class="hiphen">
+                                   --
+                                 </div>
+                                 <div class="alert2">
+                                    <img  id="set5" src="assets\img\settings.svg" onclick="mod(this.id)"/>
+                                 </div>
+                            </td>      
+    
+                        </tr>
+                        <tr class="row7" onmouseover="colorchange1(this.classList[0])" onmouseout="colorchange2(this.classList[0])">  
+                            <td class="column1">
+                                <div class="alert1">
+                                   <img src="assets\img\alert1.png" />
+                                </div>
+                                <div class="feature">
+                                     feature2
+                                </div>
+                             </td>
+                             <td class="column2">
+                                --
+                             </td>
+                             <td class="column3">
+                                --
+                             </td>
+                             <td class="column4">
+                                --
+                             </td>
+                             <td class="column5">
+                                --
+                             </td>
+                             <td class="column6">
+                                 <div class="hiphen">
+                                   --
+                                 </div>
+                                 <div class="alert2">
+                                    <img  id="set6" src="assets\img\settings.svg" onclick="mod(this.id)"/>
+                                 </div>
+                             </td>     
+                        </tr>     
+                        <tr class="row8" onmouseover="colorchange1(this.classList[0])" onmouseout="colorchange2(this.classList[0])"> 
+                            <td class="column1">
+                                <div class="alert1">
+                                   <img src="assets\img\alert1.png" />
+                                </div>
+                                <div class="test2">
+                                     test2
+                                </div>
+                             </td>
+                             <td class="column2">
+                                --
+                             </td>
+                             <td class="column3">
+                                --
+                             </td>
+                             <td class="column4">
+                                --
+                             </td>
+                             <td class="column5">
+                                --
+                             </td>
+                             <td class="column6">
+                                 <div class="hiphen">
+                                   --
+                                 </div>
+                                 <div class="alert2">
+                                    <img  id="set7" src="assets\img\settings.svg" onclick="mod(this.id)"/>
+                                 </div>
+                            </td>     
+                        </tr>     
+                        <tr class="row9"onmouseover="colorchange1(this.classList[0])" onmouseout="colorchange2(this.classList[0])"> 
+                            <td class="column1">
+                                <div class="alert1">
+                                   <img src="assets\img\alert1.png" />
+                                </div>
+                                <div class="five">
+                                     5678
+                                </div>
+                            </td>
+                             <td class="column2">
+                                --
+                             </td>
+                             <td class="column3">
+                                --
+                             </td>
+                             <td class="column4">
+                                --
+                             </td>
+                             <td class="column5">
+                                --
+                             </td>
+                             <td class="column6">
+                                 <div class="hiphen">
+                                   --
+                                 </div>
+                                 <div class="alert2">
+                                    <img  id="set8" src="assets\img\settings.svg" onclick="mod(this.id)"  />
+                                 </div>
+                            </td>     
+                        </tr>                     
+                        <div id="modl">
+                            <div  id="modl1">
+                                   <div id="tex">
+                                      
+                                   </div>
+                                   <img src="assets\img\close.png" id="modalclose">
+                            </div>
+                            
+                        </div>
+    
+    
+    
+    
+    
+                    </table>
+                </div>
+                 <footer class="mid1">
+                     <div class="features">
+                          FEATURES
+                     </div>
+                     <div class="contact">
+                         CONTACT US
+                     </div>
+                     <div class="document">
+                         DOCUMENTATION
+                     </div>
+                     <div class="left">
+                        <img id="tmobile" src="assets\img\tmobile.png" />
+                     </div>
+                 </footer>
+                   
+                
+            </div>
+
+        </nav>
+        <script  type="text/javascript" src="main.js"> </script> 
+    </body>
+</html>
