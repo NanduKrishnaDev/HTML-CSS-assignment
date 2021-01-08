@@ -44,7 +44,6 @@ function rect(clicked){    // to fill in green color on the 4 rectangles
 
 function sidebar(){ // to activate sidebar
      document.getElementById("sidebar").style.transform="translateX(0)";
-    //  document.getElementById("sidebar").style.display="block";
 }
 
 function change(clicked){ //to make logos active
